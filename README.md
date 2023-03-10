@@ -9,6 +9,13 @@ To install this project, follow these steps:
 - Step 1: Clone this repository
 - Step 2: Enter the directory and run `npm install` and then `npm run dev`
 
-## License
+## Add Your API Key
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+- Add your Keys to the Configuration object in `/routes/voice-to-text-.js`
+
+```javascript
+const config = new Configuration({
+  organization: <YOUR_ORG_ID>,
+  apiKey: <YOUR_API_KEY>,
+});
+```
